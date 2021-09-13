@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>TGL</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <button class="tgl">TGL</button>
+        <div class="green-bar"></div>
+        <button>Home</button>
+      </div>
+
+      <div class="logout">
+        <button>Account</button>
+        <button>Log out <img src="img/icons/arrow-right.svg" alt="logout"></button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="main-content">
+          <div class="title">
+            <h1>NEW BET</h1>
+          </div>
+
+          <div class="bets-options">
+            <p>Choose a game</p>
+            <div class="option"></div>
+          </div>
+
+          <div class="rules"></div>
+
+          <div class="betting-sheet">
+            <div class="card"></div>
+          </div>
+
+          <div class="button-container"></div>
+        </div>
+
+        <div style="justify-self: right; padding-bottom: 44px;">
+          <div class="cart-container">
+            <div class="title">
+              <h1>CART</h1>
+            </div>
+
+            <div class="cart-betting-sheet"></div>
+
+            <div class="total-price">
+              <h1>CART</h1>
+              <h1 class="total-price-p">VAZIO</h1>
+            </div>
+
+            <button class="save-cart">
+              Save <img src="img/icons/arrow-right-save.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/dom.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
