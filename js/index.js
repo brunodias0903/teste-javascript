@@ -1,4 +1,4 @@
-; (function (DOM, doc) {
+(function (DOM, doc) {
   'use strict'
 
   var numbersSelectedLength = 0
@@ -16,7 +16,7 @@
 
       openConnection: function openConnection() {
         var ajax = new XMLHttpRequest()
-        ajax.open('GET', '../games.json', true)
+        ajax.open('GET', './games.json', true)
         ajax.send()
         ajax.addEventListener('readystatechange', this.getBetData, false)
       },
@@ -128,7 +128,7 @@
         var $img = doc.createElement('img')
 
         $cartButton.className = 'cart-button'
-        $img.src = 'images/icons/shopping-cart.svg'
+        $img.src = 'img/icons/shopping-cart.svg'
 
         $cartButton.appendChild($img)
         $cartButton.appendChild($cartButtonText)
@@ -266,7 +266,7 @@
 
         $delete.className = 'delete-bet'
         $delete.id = actualGame.price
-        $trashImg.src = 'images/icons/trash.svg'
+        $trashImg.src = 'img/icons/trash.svg'
         $trashImg.alt = 'deletar'
 
         $delete.appendChild($trashImg)
